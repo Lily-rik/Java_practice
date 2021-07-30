@@ -13,10 +13,10 @@ public class Sample {
  */
 	public static void main(String[] args) {
 		// 次の行で、コンソールに文字力を出力します。
-		 System.out.println("Hello Eclipse！");
+		 System.out.println("Hello Eclipse！\n\'It's Tuesday today.\'\n\"今日は火曜日です。\"");
 	}
 
 }
 
 // github test
-// githubtest2
+// github test2
