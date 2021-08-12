@@ -52,8 +52,7 @@ public class BmiCalc extends HttpServlet {
 		bmi = weight /(height * height);
 		
 		out.println("<html><body>");
-		out.println("<p>あなたのBMI、体格指数は、" + bmi + "です。");
-		out.println("</body></html>");
+		out.println("あなたのBMI、体格指数は、" + bmi + "です。");		out.println("</body></html>");
 	}
 
 }
