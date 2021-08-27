@@ -1,9 +1,8 @@
 package jp.learningjavatext.javastudy;
 
-class Hello {
+class Hello2 {
 	public static void main(String[] args) {
-		System.out.println("Hello!");
+		String message = "Hello2!";
+		System.out.println(message);
 	}
 }
-
-
