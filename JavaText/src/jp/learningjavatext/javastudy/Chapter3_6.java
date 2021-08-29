@@ -1,6 +1,6 @@
 package jp.learningjavatext.javastudy;
 
-class DebugTest {
+class Chapter3_6 {
 	public static void main(String[] args) {
 	System.out.println(1234);
 	/* 

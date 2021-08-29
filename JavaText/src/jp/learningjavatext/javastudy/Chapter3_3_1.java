@@ -1,6 +1,6 @@
 package jp.learningjavatext.javastudy;
 
-class MessagePrint1 {
+class Chapter3_3_1 {
 	public static void main(String[] args) {
 		// printメソッドは表示の際改行されなくなる
 		System.out.print("Good morning.");

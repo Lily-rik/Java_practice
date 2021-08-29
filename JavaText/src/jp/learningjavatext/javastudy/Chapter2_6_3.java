@@ -1,6 +1,6 @@
 package jp.learningjavatext.javastudy;
 
-class Hello3 {
+class Chapter2_6_3 {
 	public static void say(String s) {
 		System.out.println(s);
 	}
