@@ -10,9 +10,9 @@ class Chapter4_4_3 {
 		System.out.println("'A' + 2 = " + ('A'+2));  // 'A'は65というコード(数値)が割り当てられるので、
 		System.out.println("'A' + 3 = " + ('A'+3));  // 結果は'A' + 1 = 66(65+1)となる
 
-		System.out.println("'A' + 1 = " + (char)('A'+1));  //
-		System.out.println("'A' + 2 = " + (char)('A'+2));  //
-		System.out.println("'A' + 3 = " + (char)('A'+3));  //		
+		System.out.println("'A' + 1 = " + (char)('A'+1));  // 計算結果の前に(char)という指定をすることで、
+		System.out.println("'A' + 2 = " + (char)('A'+2));  // この値を数値としてではなく文字コードの66番(文字B)として処理されるので、
+		System.out.println("'A' + 3 = " + (char)('A'+3));  //	 'A' + 1 = Bとなる
 		
 	}
 
