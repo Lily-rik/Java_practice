@@ -1,6 +1,6 @@
 package jp.learningjavatext.javastudy;
 
-class Number1 {
+class Chapter3_5 {
 	public static void main(String[] args) {
 		// 数を表示させる際は''""などで囲まず直接記述する
 		System.out.println(1);
