@@ -14,8 +14,15 @@ class Chapter5_4 {
 		System.out.print("身長" + shincho + "mの人の標準体重は、");
 		System.out.println(taiju + "kgです。");
 		
+		int shincho2;
+		float taiju2;
 		
-		float
+		shincho2 = 175;
+		taiju2 = (shincho2 - 100) * 0.9f;  // 標準体重 = (身長cm - 100) * 0.9
+																			 // 小数点を含む実数を表現する場合、通常はdouble型が使用される
+																			 // float型を使用するには、[0.9f]のように実数の末尾に[f]をつける = 接尾辞という
+		System.out.print("身長" + shincho2 + "cmの人の標準体重は、");
+		System.out.println(taiju2 + "kgです。");
 	}
 
 }
