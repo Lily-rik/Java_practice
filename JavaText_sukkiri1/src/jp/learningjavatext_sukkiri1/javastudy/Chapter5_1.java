@@ -8,8 +8,10 @@ public class Chapter5_1 {
 		System.out.println("メソッドの呼び出しが終わりました");
 		System.out.println();
 		
+		
 		methodA();
 		System.out.println();
+		
 		
 		System.out.println("メソッドを呼び出します");
 		hello2("湊");	// hello2メソッドの呼び出しをおこない、引数に「湊」を渡している
@@ -18,12 +20,24 @@ public class Chapter5_1 {
 		System.out.println("メソッドの呼び出しが終わりました");
 		System.out.println();
 		
+		
 		add(100, 20);		// 100と200の2つの引数を渡してaddメソッドを呼び出している
 		add(200, 50);		// 渡す値 = 実引数
 		System.out.println();
 		
 		
+		int ans2 = add2(100, 10);										// add2メソッドの呼び出しで100,10の値も一緒に渡している
+		System.out.println("100 + 10 = " + ans2);		// その後add2メソッド内で処理され、returnが戻り値として返ってきている
+		System.out.println();
+		
+		
+		System.out.println(add3(add3(10, 20), add3(30, 40)));		//(add3(30, 70))となってadd3メソッドが再び呼び出され、
+														// 返り値：30			返り値：70					返り値：100となり画面では100と出力される
+		System.out.println();
+		
 	}
+	
+	
 	
 	// 5.1
 	public static void hello() {	// helloがメソッド名、{}で囲まれた部分がメソッドブロック
@@ -55,16 +69,18 @@ public class Chapter5_1 {
 	}
 	
 	
+	// 5.3
+	// 戻り値
+	public static int add2(int p, int q) {	// voidは「何もない」という意味、戻り値がある時はその型を書く
+		int ans2 = p + q;
+		return ans2;	// 戻り値はひとつしか用意できない
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	// 戻り値をそのまま使用する
+	public static int add3(int m, int n) {
+		int ans3 = m + n;
+		return ans3;	// return値はメソッドの終了も行うため、その後に処理を書かないように注意！
+	}
+
 }
 	
