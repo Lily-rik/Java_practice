@@ -44,23 +44,6 @@ class Chapter4_practice {
 //				break;
 //			}
 //		}
-		
-		
-		
-	}
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+//	}
 	
 }
