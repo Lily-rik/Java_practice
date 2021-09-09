@@ -1,6 +1,6 @@
 package jp.learningjavatext_sukkiri1.javastudy;
 
-class Chapter3_practice {
+public class Chapter3_practice {
 
 //	1.
 //		① weight == 60;
