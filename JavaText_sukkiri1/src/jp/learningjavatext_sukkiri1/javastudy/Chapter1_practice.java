@@ -1,6 +1,6 @@
 package jp.learningjavatext_sukkiri1.javastudy;
 
-class Chapter1_practice {
+public class Chapter1_practice {
 
 //	1.
 //	（ア）コンパイラ

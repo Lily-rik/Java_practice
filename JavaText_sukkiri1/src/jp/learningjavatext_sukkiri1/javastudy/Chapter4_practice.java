@@ -1,6 +1,6 @@
 package jp.learningjavatext_sukkiri1.javastudy;
 
-class Chapter4_practice {
+public class Chapter4_practice {
 	
 //	1.
 //		① int[] points = new int[4];

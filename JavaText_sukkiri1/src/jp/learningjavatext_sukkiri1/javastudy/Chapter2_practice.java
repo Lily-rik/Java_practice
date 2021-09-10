@@ -1,6 +1,6 @@
 package jp.learningjavatext_sukkiri1.javastudy;
 
-class Chapter2_practice {
+public class Chapter2_practice {
 
 //	1.
 //	public static void main(String[] args) {

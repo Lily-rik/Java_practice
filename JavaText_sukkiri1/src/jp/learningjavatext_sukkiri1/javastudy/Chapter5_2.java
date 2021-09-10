@@ -1,6 +1,6 @@
 package jp.learningjavatext_sukkiri1.javastudy;
 
-class Chapter5_2 {
+public class Chapter5_2 {
 
 	public static void main(String[] args) {
 		// 仮引数の型が異なっていれば、実引数を見て、その引数の型に一致するメソッドを呼び出してくれる
