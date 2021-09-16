@@ -4,8 +4,13 @@ public class Chapter10_Hero {
 	String name = "ミナト";
 	int hp = 100;
 	
+	// コンストラクタ
+	public Chapter10_Hero () {
+		System.out.println("Heroのコンストラクタが動作");
+	}
+	
 	// 戦う
-	public void attack (Matango m) {
+	public void attack (Chapter10_Matango m) {
 		System.out.println(this.name + "の攻撃！");
 		m.hp -= 5;
 		System.out.println("5ポイントのダメージを与えた！");
