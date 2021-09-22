@@ -10,6 +10,5 @@ public class Chapter11_Dancer extends Chapter11_Character {
 		System.out.println("敵に3ポイントのダメージ");	// このクラスも抽象クラスにしないとコンパイルすることができなくなる
 		m.hp -= 3;
 	}
-	
 
 }
