@@ -12,6 +12,5 @@ public abstract class Chapter11_Character {		// 抽象クラス：抽象メソ�
 	// 戦う
 	public abstract void attack(Matango m);		// 抽象メソッド：現時点では何をするか確定できないメソッド
 																						// この宣言によって何もしないメソッドと区別することができる
-	
 
 }
