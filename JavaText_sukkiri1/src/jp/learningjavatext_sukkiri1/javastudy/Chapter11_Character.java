@@ -14,4 +14,3 @@ public abstract class Chapter11_Character {		// 抽象クラス：抽象メソ�
 																						// この宣言によって何もしないメソッドと区別することができる
 
 }
-
