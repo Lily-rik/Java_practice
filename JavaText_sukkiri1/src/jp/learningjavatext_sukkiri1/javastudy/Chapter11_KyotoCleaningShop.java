@@ -25,7 +25,4 @@ public class Chapter11_KyotoCleaningShop implements Chapter11_CleaningServise {	
 		retrun c;
 	}
 	
-	
-	
-
 }
