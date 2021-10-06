@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.Calendar;
 import java.text.SimpleDateFormat;
 import java.time.*;
+import java.time.format.*;
 
 public class Chapter15_Main2 {
 
@@ -84,19 +85,55 @@ public class Chapter15_Main2 {
 		if (z2.isEqual(z3)) {		// 同じ瞬間の判定にはequals()ではなくisEqual()を使用する
 			System.out.println("これらは同じ瞬間を指しています");
 		}
+		System.out.println();
 		
 		
+		// LocalDateTimeの生成方法
+		LocalDateTime l1 = LocalDateTime.now();		// 現在日時を取得
+		LocalDateTime l2 = LocalDateTime.of(2020, 1, 1, 9, 5, 0, 0);
+		
+		// LocalDateTimeとZonedDateTimeの相互交換
+		ZonedDateTime z4 = l2.atZone(ZoneId.of("Europe/London"));
+		LocalDateTime l3 = z4.toLocalDateTime();
+		System.out.println(l1);		// 現在日時
+		System.out.println(l2);		// 曖昧な日時
+		System.out.println(z4);		// タイムゾーンの情報を追加
+		System.out.println(l3);		// タイムゾーンの情報を除去(曖昧な日時)
+		System.out.println();
+		
+		// 各種日時クラスのメソッド利用例
+		
+		// 文字列からLocalDateを作成
+		DateTimeFormatter fmt = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+		LocalDate ldate = LocalDate.parse("2020/09/22", fmt);
+		
+		// 1000日後を計算する
+		LocalDate ldatep = ldate.plusDays(100);
+		String str = ldatep.format(fmt);
+		System.out.println("100日後は" + str);
+		
+		// 現在日付との比較
+		LocalDate now4 = LocalDate.now();
+		if (now4.isAfter(ldatep)) {
+			System.out.println("100日後は過去の日付です");
+		}
+		System.out.println();
 		
 		
+		// Periodクラスの利用例
+		LocalDate d3 = LocalDate.of(2020, 1, 1);
+		LocalDate d4 = LocalDate.of(2020, 1, 4);
 		
+		// 3日間を表すPeriodを2通りの方法で生成
+		Period p1 = Period.ofDays(3);
+		Period p2 = Period.between(d3, d4);
+		System.out.println(p1);
+		System.out.println(p2);
 		
-		
-		
-		
-		
-		
-		
-		
+		// d4のさらに3日後を計算する
+		LocalDate d5 = d4.plus(p2);
+		System.out.println(d5);
+		System.out.println();
 
 	}
 
