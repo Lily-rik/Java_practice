@@ -54,6 +54,36 @@ public class Chapter15_Main {
 		// System.out.println(s6);		// 1万回Javaが表示される
 		
 		
+		// 正規表現を用いた処理の一例
+		// splitメソッド：文字列の分割
+		String s7 = "abc,def:ghi";
+		String[] words = s7.split("[,:]");
+		for (String w : words) {
+			System.out.print(w + "->");
+		}
+		System.out.println();
+		System.out.println();
+		
+		// replaceAllメソッド：文字列の置換
+		String w = s7.replaceAll("[beh]","x");
+		System.out.println(w);
+		System.out.println();
+		
+		
+		// formatメソッド：整形した文字列を組み立てる
+		Chapter15_Hero hero = new Chapter15_Hero();
+		hero.setName("minato");
+		hero.setJob("hero");
+		hero.setGold(2800);
+		
+		final String FORMAT = "%-9s %-13s 所持金%,6d";
+		String s8 = String.format(FORMAT, hero.getName(), hero.getJob(), hero.getGold());
+		System.out.println(s8);
+		System.out.println();
+		
+		// formatメソッドを用いて入力と同時に出力を行う場合
+		System.out.printf("製造番号%s-%02d", "SJV", 3);
+		System.out.println();
 		
 	}
 
