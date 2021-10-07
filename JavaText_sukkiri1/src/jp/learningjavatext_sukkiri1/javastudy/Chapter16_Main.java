@@ -76,11 +76,12 @@ public class Chapter16_Main {
 		System.out.println("熊本県の人口は、" + kumamoto);		// 結果は181ではなく182
 		System.out.println();
 		
-//		prefs.put("京都府", 255);
-//		for (String key : prefs.KeySet()) {		// 解決できず、、、？？？
-//			int value = prefs.get(key);
-//			System.out.println(key + "の人口は、" + value);
-//		}
+		prefs.put("京都府", 255);
+		for (String key : prefs.keySet()) {		// 県名一覧を取得し繰り返す
+			int value = prefs.get(key);		// 県名(キー)を指定し人口(値)を取得
+			System.out.println(key + "の人口は、" + value);
+		}
+		System.out.println();
 		
 		
 		// 要素の参照に関する注意点
