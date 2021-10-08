@@ -118,6 +118,24 @@ public class Chapter17_Main {
 		} catch (Exception e) {
 			System.out.println("何らかの例外が発生しました");
 		}
+		
+		
+		
+		// 例外を発生させる
+		// 例外インスタンスを自分で投げる
+		
+		Chapter17_Person p = new Chapter17_Person();
+		p.setAge(-128);		// 0以下の数字をセットすると例外処理が発生する
+		
+		// オリジナル例外を定義する
+		// 既存の例外クラスを継承してオリジナルの例外クラスを作ることができる
+		try {
+			// 試験的に例外を発生させる
+			throw new Chapter17_UnsupportedMusicFileException("未対応のファイルです");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 
 
 
