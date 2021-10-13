@@ -138,25 +138,49 @@ public class Chapter04_Main {
 			System.out.print(value + " ");
 		}
 		System.out.println();
+		System.out.println();
 		
 		
-
-
+		// 実行結果は？
+		int[] arrayA = {1, 2, 3};
+		int[] arrayB;
+		arrayB = arrayA;
+		arrayB[0] = 100;
+		System.out.println(arrayA[0]);
+		System.out.println();
+		
+		// ガベージコレクション
+		boolean judge = true;
+		if (judge == true) {
+			int[] array = {1, 2, 3};
+		}		// 宣言されたブロックが終了した時点で配列arrayはメモリから消失する
+				// しかし、newされた3つの要素は残り、事実上メモリ内のゴミとなる
+				// Javaではこのように不要になったメモリを自動的に探し片付けてくれる仕組みがある
+				// = ガベージコレクション
+		
+		// null
+//		int[] array2 = {1, 2, 3};
+//		array2 = null;		// nullが代入されると、参照型の変数はどこも参照していない状態になる
+//		array2[0] = 10; 	// このことを「参照を切る」という
+//		System.out.println(array2[0]);		// 実行するとNullPointerExceptionの例外エラーが出る
 		
 		
+		// 2次元配列の利用
+		int[][] test = new int[2][3];		// [行の添え字][列の添え字]
+		test[0][0] = 40;
+		test[0][1] = 50;
+		test[0][2] = 60;
+		test[1][0] = 80;
+		test[1][1] = 60;
+		test[1][2] = 70;
+		System.out.println(test[1][1]);
+		System.out.println();
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
+		// 親配列と子配列の要素数を表示
+		int[][] test2 = {{40, 50, 60}, {80, 60, 70}};
+		System.out.print(test2.length + " ");
+		System.out.println(test2[0].length);
+		System.out.println();
 
 	}
 
