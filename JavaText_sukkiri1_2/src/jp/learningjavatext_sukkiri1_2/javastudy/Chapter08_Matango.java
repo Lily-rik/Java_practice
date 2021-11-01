@@ -2,6 +2,7 @@ package jp.learningjavatext_sukkiri1_2.javastudy;
 
 public class Chapter08_Matango {
 	
+	String name;
 	int hp;
 	final int LEVEL = 10;		// フィールドの初期値を設定することもできる
 													// finalをつけると定数フィールドとなり、値を書き換えることはできなくなる
