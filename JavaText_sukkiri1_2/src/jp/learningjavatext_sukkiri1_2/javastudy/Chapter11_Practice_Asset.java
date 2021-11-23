@@ -23,12 +23,11 @@ public abstract class Chapter11_Practice_Asset {
 		this.price = price;
 	}
 	
+	public String getName() {
+		return this.name;
+	}
 	
-	
-	
-	
+	public int getPrice() {
+		return this.price;
+	}
 }
-	
-	
-	
-	

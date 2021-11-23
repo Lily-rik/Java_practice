@@ -1,6 +1,6 @@
 package jp.learningjavatext_sukkiri1_2.javastudy;
 
-public abstract class Chapter11_Practice_TangibleAsset extends Chapter11_Practice_Assett implements Chapter11_Practice_Thing {
+public abstract class Chapter11_Practice_TangibleAsset extends Chapter11_Practice_Asset implements Chapter11_Practice_Thing {
 	
 	String color;
 	double weight;
@@ -31,6 +31,3 @@ public abstract class Chapter11_Practice_TangibleAsset extends Chapter11_Practic
 // 	(ア) Asset
 //	(イ) IntangibleAsset
 // 	(ウ) Patent
-
-
-
